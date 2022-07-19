@@ -26,5 +26,5 @@ jobs:
           npm ci
       - name: deploy
         run: |
-          zip -r test-router-packager.zip .
+          zip -r test-route-packager.zip .
           aws lambda update-function-code --function-name=test-route-packager --zip-file=fileb://test-route-packager.zip 
