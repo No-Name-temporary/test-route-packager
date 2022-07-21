@@ -5,6 +5,10 @@ const getMessageAttributes = require('./getMessageAttributes');
 exports.handler = function (event) {
   console.log('...starting test-route-packager with payload --> ', event);
 
+	if (!event.test) {
+		event = JSON.parse(event.body);
+	}
+
   const region = 'us-east-1';
   AWS.config.update({ region });
 
