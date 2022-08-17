@@ -1,7 +1,7 @@
 # About
-This respository contains the code the Test Route Packager lambda function, a component of the Seymour Active Monitoring Solution.
+This respository contains the code for the Test Route Packager lambda function, a component of the Seymour Active Monitoring Solution.
 
-The Test Route Packager is the target for all scheduled EventBridge rules. Test Route Packager’s purpose is to read all the location data from the JSON test configuration payload delivered by an EB rule, and prep it for routing to [test runner](https://github.com/seymour-active-monitoring/test-runner) lambda functions in the the correct regions.
+Test Route Packager is the target for all scheduled EventBridge rules. Test Route Packager’s purpose is to read location data from the JSON test configuration payload delivered by an EB rule, and prep it for routing to [test runner](https://github.com/seymour-active-monitoring/test-runner) lambda functions in the the correct regions.
 
 **Expected Shape of incoming test configuration JSON:**
 
@@ -41,4 +41,4 @@ The Test Route Packager is the target for all scheduled EventBridge rules. Test 
 
 # Deployment
 
-The Test Route Packager should be deployed along with the entire application. Refer to the following repo for detailed deployment instructions: [infra-setup](https://github.com/seymour-active-monitoring/infra-setup)
+Test Route Packager should be deployed along with the entire Seymour application. Refer to the following repo for detailed deployment instructions: [infra-setup](https://github.com/seymour-active-monitoring/infra-setup)
